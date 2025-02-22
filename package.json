@@ -1,0 +1,19 @@
+{
+	"name": "@voulr/monorepo",
+	"private": true,
+	"scripts": {
+		"landing": "pnpm --filter @voulr/landing -- ",
+		"format": "prettier --write .",
+		"lint": "prettier --check ."
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"esbuild"
+		]
+	},
+	"devDependencies": {
+		"prettier": "^3.4.2",
+		"prettier-plugin-svelte": "^3.3.3",
+		"prettier-plugin-tailwindcss": "^0.6.11"
+	}
+}
