@@ -3,6 +3,7 @@
 	"private": true,
 	"scripts": {
 		"landing": "pnpm --filter @voulr/landing -- ",
+		"cli": "pnpm --filter @voulr/cli -- ",
 		"format": "prettier --write .",
 		"lint": "prettier --check ."
 	},
