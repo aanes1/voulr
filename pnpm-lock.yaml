@@ -18,6 +18,8 @@ importers:
         specifier: ^0.6.11
         version: 0.6.11(prettier-plugin-svelte@3.3.3(prettier@3.5.2)(svelte@5.20.2))(prettier@3.5.2)
 
+  apps/cli: {}
+
   apps/landing:
     devDependencies:
       '@sveltejs/adapter-static':

@@ -1,0 +1,27 @@
+{
+	"name": "voulr",
+	"version": "2.0.0",
+	"description": "a lambda deployment tool",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/aanes1/voulr",
+		"directory": "apps/cli"
+	},
+	"homepage": "https://voulr.com",
+	"keywords": [
+		"create",
+		"new",
+		"deploy",
+		"build",
+		"lambda",
+		"aws"
+	],
+	"bin": "./run.cjs",
+	"scripts": {
+		"postinstall": "node ./install.cjs"
+	},
+	"dependencies": {
+		"tar": "^7.4.3"
+	}
+}
