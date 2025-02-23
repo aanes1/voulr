@@ -34,7 +34,7 @@ async function install() {
 
 	const res = await fetch(url)
 	if (!res.ok) {
-		throw new Error(`failed to fetch release: ${response.statusText}`)
+		throw new Error(`failed to fetch release: ${res.statusText}`)
 	}
 
 	const stream = Readable.fromWeb(res.body)
@@ -62,7 +62,7 @@ async function run() {
 	})
 	if (child.error) {
 		console.error(child.error)
-		child.exit(1)
+		process.exit(1)
 	}
 	process.exit(child.status)
 }
