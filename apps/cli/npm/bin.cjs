@@ -30,7 +30,7 @@ async function install() {
 	if (exists) return
 
 	const target = getTarget()
-	const url = `https://github.com/aanes1/voulr/releases/download/${version}/voulr-${target}.tar.gz`
+	const url = `https://github.com/aanes1/voulr/releases/download/v${version}/voulr-${target}.tar.gz`
 
 	const res = await fetch(url)
 	if (!res.ok) {
