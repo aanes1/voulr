@@ -28,4 +28,7 @@ pub fn get_rcfg() -> RenderConfig<'static> {
                         .with_attr(Attributes::BOLD),
                 ),
         )
+        // select
+        .with_selected_option(Some(StyleSheet::new().with_attr(Attributes::BOLD)))
+        .with_highlighted_option_prefix(Styled::new(ANSWER_PREFIX).with_fg(Color::DarkMagenta))
 }
